@@ -1,5 +1,4 @@
 package com.apap.tutorial5.service;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -23,7 +22,7 @@ public class CarServiceImpl implements CarService {
 	 }	
 
 	@Override
-	public void deleteCar(Long id) {
+	public void deleteById(Long id) {
 		// TODO Auto-generated method stub
 		carDb.deleteById(id);
 	}
@@ -43,7 +42,9 @@ public class CarServiceImpl implements CarService {
 	}
 
 	@Override
-	public List<CarModel> getListCardOrderByPriveAsc(Long dealerId) {
-		return carDb.findByDealerIdOrderByPriceAsc(dealerId);
+	public void deleteCar(CarModel car) {
+		// TODO Auto-generated method stub
+		carDb.delete(car);
 	}
 }
+	

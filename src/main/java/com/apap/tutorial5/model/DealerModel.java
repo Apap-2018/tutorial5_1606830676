@@ -63,6 +63,4 @@ public class DealerModel implements Serializable{
 	public void setListCar(List<CarModel> listCar) {
 		this.listCar = listCar;
 	}
-
-	
 }
